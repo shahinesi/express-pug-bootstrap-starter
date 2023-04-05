@@ -1,0 +1,36 @@
+{
+  "name": "epbs",
+  "version": "2.0.0",
+  "description": "express pug bootstrap starter",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shahinesi/express-pug-bootstrap-starter.git"
+  },
+  "keywords": [
+    "express",
+    "pug",
+    "bootstrap",
+    "starter"
+  ],
+  "author": "Shahin Eskandari",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/shahinesi/express-pug-bootstrap-starter/issues"
+  },
+  "homepage": "https://github.com/shahinesi/express-pug-bootstrap-starter#readme",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "debug": "^4.3.4",
+    "express": "^4.18.2",
+    "express-session": "^1.17.3",
+    "http": "^0.0.1-security",
+    "http-errors": "^2.0.0",
+    "morgan": "^1.10.0",
+    "path": "^0.12.7",
+    "pug": "^3.0.2"
+  }
+}

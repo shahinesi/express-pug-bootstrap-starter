@@ -1,0 +1,19 @@
+include ./progress-bars
+
+//- modal
+mixin ppb(title,text,id1,value,type)
+  .modal.fade(id=id1,tabindex="-1",role="dialog",aria-labelledby=id1+"Label" aria-hidden="true")
+    .modal-dialog
+      .modal-content
+        .modal-header
+          button.close(type="button",data-dismiss="modal")
+            span(aria-hidden="true") &times;
+            span.sr-only Close
+          h4.modal-title(id=id1+"Label")= title
+        .modal-body
+          block
+          div.pt-1
+          +progress-bar(value,type)
+          p.text-center.pt-3.mb-0= text
+        .modal-footer
+          button.btn.btn-default(type="button",data-dismiss="modal") Close

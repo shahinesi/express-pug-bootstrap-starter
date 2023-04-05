@@ -1,0 +1,143 @@
+block variables
+
+doctype html
+html(data-head-attrs='lang' data-ssr='' lang='fa' dir='rtl')
+  head
+    //- Meta For Public
+    meta(http-equiv='Content-Type' content='text/html; charset=UTF-8')
+    meta(name='viewport' content='width=device-width,initial-scale=1,shrink-to-fit=no,maximum-scale=5,viewport-fit=cover')
+    meta(content=' ..... ' name='description')
+    meta(content=' ..... ' name='keywords')
+    meta(name='google-site-verification' content=' ..... ')
+    meta(name='author' content='ُShahin Eskandari')
+    link(rel='canonical' href='https://URL.com/')
+
+    //- Meta & link For Social Media
+    meta(property='og:type' content='website')
+    meta(property='og:site_name' content=' ..... ')
+    meta(property='og:locale' content='fa_IR')
+    meta(property='og:image' content='link')
+    meta(property='og:image:alt' content=' ..... ')
+    meta(property='og:title' content=' ..... ')
+    meta(property='og:description' content=' ..... ')
+    meta(property='og:url' content='https://URL.com/')
+
+    //- Meta & link For Apple //- Add to Home screen - Progressive web apps (PWAs)
+    meta(name='apple-mobile-web-app-capable' content='yes')
+    meta(name='apple-mobile-web-app-status-bar-style' content='balck')
+    meta(name='apple-mobile-web-app-title' content='َAdd To Home')
+    link(href='../images/public/apple-touch-icon.png' rel='apple-touch-icon' type='image/png' sizes='180x180')
+    link(href='../images/public/apple-touch-icon.png' rel='apple-touch-icon-precomposed' type='image/png' sizes='180x180')
+    link(rel='mask-icon' href='../images/logo.svg' color='#a6dace')
+
+    //- Meta For Android //- Add to Home screen - Progressive web apps (PWAs)
+    meta(name='theme-color' content='#a6dace')
+    meta(name='mobile-web-app-capable' content='yes')
+    meta(name='msapplication-TileColor' content='#000000')
+
+    //- Title
+    title CUSTOM - TITLE
+    
+    //- Favicons
+    link(href='../images/public/favicon.png' rel='icon' type='image/png' sizes='32x32')
+    link(href='../images/public/favicon.png' rel='shortcut icon' type='image/png' sizes='16x16')
+    link(href='../images/public/favicon.png' rel='shortcut icon' type='image/png' sizes='196x196')
+
+    //- Google Tag Manager (gtag.js)
+    script(async src="https://www.googletagmanager.com/gtag/js?id=G-CODE")
+
+    //- Vendor CSS Files
+    link(href='../vendor/bootstrap/css/bootstrap.rtl.min.css' rel='stylesheet')
+    link(href='../vendor/fontawesome_pro.6.3.0/css/all.css' rel='stylesheet')
+    link(href='../vendor/bootstrap-icons/bootstrap-icons.css' rel='stylesheet')
+    link(href='../vendor/swiper/swiper-bundle.min.css' rel='stylesheet')
+    link(href='../vendor/addtohomescreen/css/addtohomescreen.css' rel='stylesheet')
+    
+    //-Template Main CSS File
+    link(href='../stylesheets/public/style.css?version = 2.0.0' rel='stylesheet')
+
+    block scripts
+
+    script.
+      // Google Analytics
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-CODE');
+
+      // Google Tag Manager
+      (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+          'gtm.start': new Date().getTime(),
+          event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, 'script', 'dataLayer', 'GTM-CODE');
+
+  body
+
+    //- Responsive navbar
+    nav.navbar.navbar-expand-lg.navbar-light.bg-light.shadow-sm
+      .container.px-lg-5
+        a.navbar-brand(href='#!') Test
+        button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarSupportedContent.collapse.navbar-collapse
+          ul.navbar-nav.ms-auto.mb-2.mb-lg-0
+            li.nav-item
+              a.nav-link.active(aria-current='page' href='#!') Test
+            li.nav-item
+              a.nav-link(href='#!') Test
+            li.nav-item
+              a.nav-link(href='#!') Test
+    //- End Responsive navbar
+
+    //- Header
+    //<div class="top"><div class="title"></div>
+    header.py-1
+      .container.px-lg-5
+    //- End Header
+
+    //- Page Content
+    block content
+    //- End Page Content
+
+    //- Footer
+    footer#footer.py-4.bg-dark
+      .container.my-auto
+        .copyright.text-center.my-auto
+          | &copy; 
+          strong
+            span Test
+        .credits
+          | Test : 
+          a(href='https://URL.com/') Test
+    //- End Footer
+
+    //- jquery
+    script(src='../vendor/jquery/jquery-3.6.3.min.js')
+    script(src='../vendor/jquery/jquery.form.min.js')
+    //- End jquery
+
+    //- Vendor JS Files
+    script(src='../vendor/bootstrap/js/bootstrap.bundle.min.js')
+    script(src='../javascripts/public/bootstrap-show-notification.js')
+    script(src='../vendor/swiper/swiper-bundle.min.js')
+    script(src='../vendor/addtohomescreen/js/addtohomescreen.js')
+    //- End Vendor JS Files
+    
+    //- Core theme JS
+    script(src='../javascripts/public/main.js?version = 2.0.0')
+    //- End Core theme JS
+
+    //- Google Tag Manager (noscript)
+    noscript
+      iframe(src='https://www.googletagmanager.com/ns.html?id=GTM-CODE' height='0' width='0' style='display:none;visibility:hidden')
+    //- End Google Tag Manager (noscript)
+
